@@ -3,7 +3,7 @@ loaderVersion="[4,)"
 license="All Rights Reserved"
 
 [[mods]]
-modId="${mod_id}"
+modId="twinblade"
 version="${mod_version}"
 displayName="Epic Fight Twinblade"
 description='''
