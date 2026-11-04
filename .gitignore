@@ -1,0 +1,7 @@
+.gradle/
+build/
+out/
+run/
+loom-cache/
+.idea/
+*.iml

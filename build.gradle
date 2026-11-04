@@ -1,0 +1,73 @@
+plugins {
+    id "dev.architectury.loom" version "1.7-SNAPSHOT" apply false
+    id "architectury-plugin" version "3.4-SNAPSHOT" apply false
+}
+
+allprojects {
+    group = maven_group
+    version = mod_version
+
+    repositories {
+        mavenCentral()
+        exclusiveContent {
+            forRepository {
+                maven {
+                    name = "Modrinth"
+                    url = "https://api.modrinth.com/maven"
+                }
+            }
+            filter { includeGroup "maven.modrinth" }
+        }
+    }
+}
+
+project(":common") {
+    apply plugin: "java-library"
+    apply plugin: "maven-publish"
+
+    dependencies {
+        testImplementation(platform("org.junit:junit-bom:5.11.4"))
+        testImplementation("org.junit.jupiter:junit-jupiter")
+    }
+
+    java {
+        withSourcesJar()
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.release = 21
+        options.encoding = "UTF-8"
+    }
+
+    tasks.withType(Test).configureEach {
+        useJUnitPlatform()
+    }
+}
+
+project(":neoforge") {
+    apply plugin: "dev.architectury.loom"
+    apply plugin: "architectury-plugin"
+    apply plugin: "maven-publish"
+
+    base {
+        archivesName = "${rootProject.archives_name}-${project.name}"
+    }
+
+    dependencies {
+        minecraft "net.minecraft:minecraft:${rootProject.minecraft_version}"
+        mappings loom.officialMojangMappings()
+    }
+
+    java {
+        withSourcesJar()
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.release = 21
+        options.encoding = "UTF-8"
+    }
+}

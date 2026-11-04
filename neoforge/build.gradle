@@ -1,0 +1,43 @@
+architectury {
+    minecraft = rootProject.minecraft_version
+    platformSetupLoomIde()
+    neoForge()
+}
+
+repositories {
+    mavenLocal()
+    maven {
+        url "https://maven.architectury.dev/"
+    }
+
+    maven {
+        name = 'NeoForged'
+        url = 'https://maven.neoforged.net/releases'
+    }
+    maven {
+        url "https://cursemaven.com"
+    }
+}
+
+dependencies {
+    neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
+
+    implementation(project(":common"))
+
+    // Required at compile time and included in the development run configuration.
+    modImplementation("maven.modrinth:epic-fight:${rootProject.epicfight_version}")
+}
+
+processResources {
+    from(project(":common").sourceSets.main.resources)
+    inputs.properties([
+        mod_id: project.mod_id,
+        mod_version: project.version,
+        minecraft_version: project.minecraft_version,
+        neoforge_version: project.neoforge_version,
+        epicfight_version: project.epicfight_version
+    ])
+    filesMatching("META-INF/neoforge.mods.toml") {
+        expand(inputs.properties)
+    }
+}

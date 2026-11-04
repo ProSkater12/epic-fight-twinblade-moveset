@@ -1,0 +1,2 @@
+// Loader-independent Java code and cross-loader contract tests are configured
+// from the root build. Future Fabric/Forge modules depend on this project.
