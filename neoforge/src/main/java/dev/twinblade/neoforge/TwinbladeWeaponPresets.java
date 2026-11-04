@@ -14,7 +14,7 @@ public final class TwinbladeWeaponPresets {
 
     public static final DeferredWeapon TWINBLADE = REGISTRY.registerWeapon(TwinbladeContent.TWINBLADE.id(), () ->
             WeaponCapability.builder()
-                    .category(CapabilityItem.WeaponCategories.SPEAR)
+                    .category(TwinbladeWeaponCategories.TWINBLADE)
                     .collider(ColliderPreset.SPEAR)
                     .swingSound(EpicFightSounds.WHOOSH_ROD)
                     .hitSound(EpicFightSounds.BLADE_HIT)

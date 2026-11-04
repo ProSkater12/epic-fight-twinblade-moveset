@@ -1,5 +1,6 @@
 {
   "item.twinblade.twinblade": "双刃战枪",
+  "weapon_category.twinblade.twinblade": "双刃战枪",
   "skill.twinblade.twinblade_discipline": "双刃战法",
   "skill.twinblade.twinblade_discipline.tooltip": "此招式组生效时，攻击速度提高 20%。"
 }

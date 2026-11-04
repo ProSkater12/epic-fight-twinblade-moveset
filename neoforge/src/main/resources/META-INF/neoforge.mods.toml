@@ -10,21 +10,21 @@ description='''
 Twinblade weapon, moveset, and passive skill for Epic Fight.
 '''
 
-[[dependencies.${mod_id}]]
+[[dependencies.twinblade]]
 modId="neoforge"
 type="required"
 versionRange="[${neoforge_version},)"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies.twinblade]]
 modId="minecraft"
 type="required"
 versionRange="[${minecraft_version}]"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies.twinblade]]
 modId="epicfight"
 type="required"
 versionRange="[21.17.3.1,21.17.3.2)"

@@ -1,5 +1,6 @@
 {
   "item.twinblade.twinblade": "Cuchillas gemelas",
+  "weapon_category.twinblade.twinblade": "Cuchillas gemelas",
   "skill.twinblade.twinblade_discipline": "Disciplina de cuchillas gemelas",
   "skill.twinblade.twinblade_discipline.tooltip": "Aumenta la velocidad de ataque un 20% mientras este moveset está activo."
 }

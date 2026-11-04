@@ -8,6 +8,7 @@ package dev.twinblade.common;
  */
 public final class TwinbladeContent {
     public static final String MOD_ID = "twinblade";
+    public static final String WEAPON_CATEGORY_ID = "twinblade";
 
     public static final Weapon TWINBLADE = new Weapon(
             "twinblade",
