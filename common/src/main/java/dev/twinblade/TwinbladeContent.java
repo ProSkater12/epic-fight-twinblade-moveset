@@ -10,6 +10,9 @@ public final class TwinbladeContent {
     public static final String MOD_ID = "twinblade";
     public static final String WEAPON_CATEGORY_ID = "twinblade";
 
+    /** Capability reach (was 1.0; doubled for longer twinblade hit distance). */
+    public static final float TWINBLADE_REACH = 2.0F;
+
     public static final Weapon TWINBLADE = new Weapon(
             "twinblade",
             5,
@@ -17,7 +20,18 @@ public final class TwinbladeContent {
             8.0F,
             1.5F,
             2,
-            1.0F
+            TWINBLADE_REACH
+    );
+
+    /** Test wooden twinblade for trying the moveset in-game. */
+    public static final Weapon WOODEN_TWINBLADE = new Weapon(
+            "wooden-twinblade",
+            3,
+            -2.6F,
+            2.0F,
+            1.0F,
+            2,
+            TWINBLADE_REACH
     );
 
     public static final Skill TWINBLADE_DISCIPLINE = new Skill(

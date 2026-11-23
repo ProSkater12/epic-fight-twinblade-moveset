@@ -22,6 +22,18 @@ public final class TwinbladeItems {
             )
     );
 
+    public static final DeferredItem<Item> WOODEN_TWINBLADE = REGISTRY.registerItem(
+            TwinbladeContent.WOODEN_TWINBLADE.id(),
+            properties -> new SwordItem(
+                    Tiers.WOOD,
+                    properties.attributes(SwordItem.createAttributes(
+                            Tiers.WOOD,
+                            TwinbladeContent.WOODEN_TWINBLADE.vanillaAttackDamage(),
+                            TwinbladeContent.WOODEN_TWINBLADE.vanillaAttackSpeed()
+                    ))
+            )
+    );
+
     private TwinbladeItems() {
     }
 }

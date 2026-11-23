@@ -11,6 +11,7 @@ NeoForge 1.21.1 addon for Epic Fight `21.17.3.1`.
 ## Current features
 
 - `twinblade` — a diamond-tier, two-handed double-bladed spear.
+- `wooden-twinblade` — a wood-tier test item that uses the same Twinblade moveset and 3D Blockbench model.
 - A Twinblade Epic Fight weapon preset and moveset.
 - `Twinblade Discipline` — a passive Epic Fight skill that grants +20% attack speed while equipped by the moveset.
 - English, Russian, Spanish, German, French, and Simplified Chinese translations.

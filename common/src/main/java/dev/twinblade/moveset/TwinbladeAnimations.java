@@ -5,6 +5,7 @@ import yesman.epicfight.api.animation.AnimationManager.AnimationAccessor;
 import yesman.epicfight.api.animation.AnimationManager.AnimationBuilder;
 import yesman.epicfight.api.animation.AnimationManager.AnimationRegistryEvent;
 import yesman.epicfight.api.animation.property.AnimationProperty.AttackAnimationProperty;
+import yesman.epicfight.api.animation.property.AnimationProperty.StaticAnimationProperty;
 import yesman.epicfight.api.animation.types.ComboAttackAnimation;
 import yesman.epicfight.api.animation.types.MovementAnimation;
 import yesman.epicfight.api.animation.types.StaticAnimation;
@@ -16,6 +17,11 @@ import yesman.epicfight.gameasset.Armatures;
  * accessor path (for example {@code twinblade.idle.json}).
  */
 public final class TwinbladeAnimations {
+    /** Authored clip length for auto.001–004. */
+    private static final float AUTO_001_004_CLIP_SECONDS = 0.6F;
+    /** Target real-time duration for each of auto.001–004. */
+    private static final float AUTO_001_004_TARGET_SECONDS = 0.4F;
+
     public static AnimationAccessor<StaticAnimation> IDLE;
     public static AnimationAccessor<MovementAnimation> WALK;
     public static AnimationAccessor<MovementAnimation> RUN;
@@ -41,18 +47,30 @@ public final class TwinbladeAnimations {
         RUN = builder.nextAccessor("twinblade.run", accessor ->
                 new MovementAnimation(true, accessor, Armatures.BIPED));
 
-        // Hit windows are provisional spear-like timings until per-clip tuning.
-        // Clips 001-004 are 0.6s; 005 is 0.75s.
+        // Clip times stay in authored seconds; PLAY_SPEED_MODIFIER compresses
+        // 001-004 to 0.4s real time. Hit windows scale with that playback.
         AUTO_001 = builder.nextAccessor("twinblade.auto.001", accessor ->
-                combo(accessor, 0.15F, 0.30F, 0.50F));
+                fastAuto(accessor, 0.15F, 0.30F, 0.50F));
         AUTO_002 = builder.nextAccessor("twinblade.auto.002", accessor ->
-                combo(accessor, 0.15F, 0.30F, 0.50F));
+                fastAuto(accessor, 0.15F, 0.30F, 0.50F));
         AUTO_003 = builder.nextAccessor("twinblade.auto.003", accessor ->
-                combo(accessor, 0.15F, 0.30F, 0.50F));
+                fastAuto(accessor, 0.15F, 0.30F, 0.50F));
         AUTO_004 = builder.nextAccessor("twinblade.auto.004", accessor ->
-                combo(accessor, 0.15F, 0.30F, 0.50F));
+                fastAuto(accessor, 0.15F, 0.30F, 0.50F));
         AUTO_005 = builder.nextAccessor("twinblade.auto.005", accessor ->
                 combo(accessor, 0.20F, 0.40F, 0.65F));
+    }
+
+    private static ComboAttackAnimation fastAuto(
+            AnimationAccessor<? extends ComboAttackAnimation> accessor,
+            float antic,
+            float contact,
+            float recovery
+    ) {
+        float speed = AUTO_001_004_CLIP_SECONDS / AUTO_001_004_TARGET_SECONDS;
+        return combo(accessor, antic, contact, recovery)
+                .addProperty(StaticAnimationProperty.PLAY_SPEED_MODIFIER,
+                        (self, entitypatch, baseSpeed, prevElapsedTime, elapsedTime) -> speed);
     }
 
     private static ComboAttackAnimation combo(
@@ -62,7 +80,7 @@ public final class TwinbladeAnimations {
             float recovery
     ) {
         return new ComboAttackAnimation(
-                0.1F,
+                0.05F,
                 antic,
                 contact,
                 recovery,
