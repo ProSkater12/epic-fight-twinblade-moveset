@@ -1,4 +1,4 @@
-package dev.twinblade.common;
+package dev.twinblade;
 
 import org.junit.jupiter.api.Test;
 

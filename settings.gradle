@@ -8,4 +8,4 @@ pluginManagement {
 }
 
 rootProject.name = "epicfight-twinblade"
-include("common", "neoforge")
+include("neoforge")

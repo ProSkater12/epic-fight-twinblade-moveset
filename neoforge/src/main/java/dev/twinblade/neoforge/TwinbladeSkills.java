@@ -1,6 +1,7 @@
 package dev.twinblade.neoforge;
 
-import dev.twinblade.common.TwinbladeContent;
+import dev.twinblade.TwinbladeContent;
+import dev.twinblade.skill.TwinbladeDisciplineSkill;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import yesman.epicfight.registry.EpicFightRegistries;

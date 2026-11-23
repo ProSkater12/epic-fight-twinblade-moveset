@@ -1,11 +1,11 @@
-package dev.twinblade.neoforge;
+package dev.twinblade.weapon;
 
-import dev.twinblade.common.TwinbladeContent;
+import dev.twinblade.TwinbladeContent;
 import net.minecraft.network.chat.Component;
 import yesman.epicfight.world.capabilities.item.WeaponCategory;
 
 /**
- * NeoForge registration adapter for the loader-neutral Twinblade category.
+ * Shared Epic Fight weapon category used by every loader adapter.
  */
 public enum TwinbladeWeaponCategories implements WeaponCategory {
     TWINBLADE;
@@ -24,7 +24,7 @@ public enum TwinbladeWeaponCategories implements WeaponCategory {
     @Override
     public Component getTranslatable() {
         return Component.translatable("weapon_category.%s.%s".formatted(
-                TwinbladeMod.MOD_ID,
+                TwinbladeContent.MOD_ID,
                 TwinbladeContent.WEAPON_CATEGORY_ID
         ));
     }

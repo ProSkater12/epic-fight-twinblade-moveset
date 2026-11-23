@@ -1,4 +1,4 @@
-package dev.twinblade.common;
+package dev.twinblade;
 
 /**
  * Loader-independent balance values. Platform modules apply these values through

@@ -1,4 +1,4 @@
-package dev.twinblade.common;
+package dev.twinblade;
 
 /**
  * Loader-neutral definition of all Twinblade gameplay content.
@@ -27,7 +27,7 @@ public final class TwinbladeContent {
 
     public static final Moveset TWINBLADE_MOVESET = new Moveset(
             "twinblade",
-            "spear",
+            "twinblade+spear-fallback",
             TWINBLADE_DISCIPLINE.id()
     );
 

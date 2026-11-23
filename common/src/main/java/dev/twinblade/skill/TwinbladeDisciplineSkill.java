@@ -1,6 +1,6 @@
-package dev.twinblade.neoforge;
+package dev.twinblade.skill;
 
-import dev.twinblade.common.TwinbladeContent;
+import dev.twinblade.TwinbladeContent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -16,7 +16,7 @@ import yesman.epicfight.skill.passive.PassiveSkill;
  */
 public final class TwinbladeDisciplineSkill extends PassiveSkill {
     private static final ResourceLocation ATTACK_SPEED_MODIFIER_ID =
-            ResourceLocation.fromNamespaceAndPath(TwinbladeMod.MOD_ID, "twinblade_discipline_attack_speed");
+            ResourceLocation.fromNamespaceAndPath(TwinbladeContent.MOD_ID, "twinblade_discipline_attack_speed");
 
     public TwinbladeDisciplineSkill(SkillBuilder<?> builder) {
         super(builder);

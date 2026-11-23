@@ -1,6 +1,8 @@
 package dev.twinblade.neoforge;
 
-import dev.twinblade.common.TwinbladeContent;
+import dev.twinblade.TwinbladeContent;
+import dev.twinblade.moveset.TwinbladeAnimations;
+import dev.twinblade.weapon.TwinbladeWeaponCategories;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import yesman.epicfight.world.capabilities.item.WeaponCategory;
@@ -11,6 +13,7 @@ public final class TwinbladeMod {
 
     public TwinbladeMod(IEventBus modBus) {
         WeaponCategory.ENUM_MANAGER.registerEnumCls(MOD_ID, TwinbladeWeaponCategories.class);
+        modBus.addListener(TwinbladeAnimations::register);
 
         TwinbladeItems.REGISTRY.register(modBus);
         TwinbladeSkills.REGISTRY.register(modBus);

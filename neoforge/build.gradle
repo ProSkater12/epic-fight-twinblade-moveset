@@ -4,6 +4,16 @@ architectury {
     neoForge()
 }
 
+sourceSets {
+    main {
+        java.srcDir project.file("../common/src/main/java")
+        resources.srcDir project.file("../common/src/main/resources")
+    }
+    test {
+        java.srcDir project.file("../common/src/test/java")
+    }
+}
+
 repositories {
     mavenLocal()
     maven {
@@ -22,14 +32,14 @@ repositories {
 dependencies {
     neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}"
 
-    implementation(project(":common"))
-
     // Required at compile time and included in the development run configuration.
     modImplementation("maven.modrinth:epic-fight:${rootProject.epicfight_version}")
+
+    testImplementation(platform("org.junit:junit-bom:5.11.4"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
 processResources {
-    from(project(":common").sourceSets.main.resources)
     inputs.properties([
         mod_id: project.mod_id,
         mod_version: project.version,
@@ -40,4 +50,8 @@ processResources {
     filesMatching("META-INF/neoforge.mods.toml") {
         expand(inputs.properties)
     }
+}
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
 }

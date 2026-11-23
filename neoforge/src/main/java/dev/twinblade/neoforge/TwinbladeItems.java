@@ -1,6 +1,6 @@
 package dev.twinblade.neoforge;
 
-import dev.twinblade.common.TwinbladeContent;
+import dev.twinblade.TwinbladeContent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
