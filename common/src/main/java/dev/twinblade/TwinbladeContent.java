@@ -27,7 +27,7 @@ public final class TwinbladeContent {
 
     public static final Moveset TWINBLADE_MOVESET = new Moveset(
             "twinblade",
-            "twinblade+spear-fallback",
+            "twinblade-auto+spear-fallback",
             TWINBLADE_DISCIPLINE.id()
     );
 

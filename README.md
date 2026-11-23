@@ -15,7 +15,7 @@ NeoForge 1.21.1 addon for Epic Fight `21.17.3.1`.
 - `Twinblade Discipline` — a passive Epic Fight skill that grants +20% attack speed while equipped by the moveset.
 - English, Russian, Spanish, German, French, and Simplified Chinese translations.
 
-Locomotion (idle, walk, run) uses custom Twinblade clips. Remaining living motions and attacks still fall back to Epic Fight spear animations until those assets are wired.
+Locomotion (idle, walk, run) and the five-hit auto combo (`twinblade.auto.001`–`005`) use custom Twinblade clips. Dash, air slash, mount, and remaining living motions still fall back to Epic Fight spear animations until those assets are wired.
 
 ## Build and test
 
