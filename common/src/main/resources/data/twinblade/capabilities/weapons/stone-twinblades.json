@@ -2,8 +2,8 @@
   "type": "twinblade:twinblade",
   "attributes": {
     "two_hand": {
-      "armor_negation": 8.0,
-      "impact": 1.5,
+      "armor_negation": 3,
+      "impact": 1.2,
       "max_strikes": 2
     }
   }

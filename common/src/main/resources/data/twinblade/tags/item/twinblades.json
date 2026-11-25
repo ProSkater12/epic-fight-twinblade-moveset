@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "twinblade:wooden-twinblades",
+    "twinblade:stone-twinblades",
+    "twinblade:gold-twinblades",
+    "twinblade:iron-twinblades",
+    "twinblade:diamond-twinblades",
+    "twinblade:netherite-twinblades"
+  ]
+}

@@ -1,7 +1,14 @@
 {
-  "item.twinblade.twinblade": "Lames jumelles",
-  "item.twinblade.wooden-twinblade": "Lames jumelles en bois",
-  "weapon_category.twinblade.twinblade": "Lames jumelles",
-  "skill.twinblade.twinblade_discipline": "Discipline des lames jumelles",
-  "skill.twinblade.twinblade_discipline.tooltip": "Augmente la vitesse d'attaque de 20 % lorsque ce moveset est actif."
+    "item.twinblade.wooden-twinblades":  "Lames jumelles en bois",
+    "item.twinblade.stone-twinblades":  "Lames jumelles en pierre",
+    "item.twinblade.gold-twinblades":  "Lames jumelles en or",
+    "item.twinblade.iron-twinblades":  "Lames jumelles en fer",
+    "item.twinblade.diamond-twinblades":  "Lames jumelles en diamant",
+    "item.twinblade.netherite-twinblades":  "Lames jumelles en netherite",
+    "weapon_category.twinblade.twinblade":  "Lames jumelles",
+    "skill.twinblade.twinblade_discipline":  "Discipline des lames jumelles",
+    "skill.twinblade.twinblade_discipline.tooltip":  "Augmente la vitesse d\u0027attaque de 20 % lorsque ce moveset est actif.",
+    "item.twinblade.extended_combo_skillbook":  "Livre de compétences",
+    "skill.twinblade.extended_combo":  "Combo étendu",
+    "skill.twinblade.extended_combo.tooltip":  "Apprendre cette compétence allonge le combo automatique avec des frappes supplémentaires (auto.006–011)."
 }

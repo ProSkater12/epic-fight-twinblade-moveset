@@ -1,7 +1,14 @@
 {
-  "item.twinblade.twinblade": "Twinblade",
-  "item.twinblade.wooden-twinblade": "Wooden Twinblade",
+  "item.twinblade.wooden-twinblades": "Wooden Twinblades",
+  "item.twinblade.stone-twinblades": "Stone Twinblades",
+  "item.twinblade.gold-twinblades": "Golden Twinblades",
+  "item.twinblade.iron-twinblades": "Iron Twinblades",
+  "item.twinblade.diamond-twinblades": "Diamond Twinblades",
+  "item.twinblade.netherite-twinblades": "Netherite Twinblades",
+  "item.twinblade.extended_combo_skillbook": "Skill Book",
   "weapon_category.twinblade.twinblade": "Twinblade",
   "skill.twinblade.twinblade_discipline": "Twinblade Discipline",
-  "skill.twinblade.twinblade_discipline.tooltip": "Increases attack speed by 20% while this moveset is active."
+  "skill.twinblade.twinblade_discipline.tooltip": "Increases attack speed by 20% while this moveset is active.",
+  "skill.twinblade.extended_combo": "Extended Combo",
+  "skill.twinblade.extended_combo.tooltip": "Learning this skill extends the twinblade auto-attack combo with additional strikes (auto.006–011)."
 }

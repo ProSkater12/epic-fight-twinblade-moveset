@@ -10,8 +10,13 @@ public final class TwinbladeWeaponPresets {
     public static final ItemPresetRegister REGISTRY = ItemPresetRegister.create(TwinbladeMod.MOD_ID);
 
     public static final DeferredWeapon TWINBLADE = REGISTRY.registerWeapon(
-            TwinbladeContent.TWINBLADE.id(),
-            () -> TwinbladeWeaponDefinitions.create(TwinbladeWeaponCategories.TWINBLADE, TwinbladeMovesets.TWINBLADE)
+            TwinbladeContent.WEAPON_PRESET_ID,
+            () -> TwinbladeWeaponDefinitions.create(
+                    TwinbladeWeaponCategories.TWINBLADE,
+                    TwinbladeMovesets.TWINBLADE,
+                    TwinbladeMovesets.TWINBLADE_EXTENDED,
+                    player -> player.getPlayerSkills().hasLearned(TwinbladeSkills.EXTENDED_COMBO.get())
+            )
     );
 
     private TwinbladeWeaponPresets() {

@@ -1,7 +1,14 @@
 {
-  "item.twinblade.twinblade": "双刃战枪",
-  "item.twinblade.wooden-twinblade": "木制双刃战枪",
-  "weapon_category.twinblade.twinblade": "双刃战枪",
-  "skill.twinblade.twinblade_discipline": "双刃战法",
-  "skill.twinblade.twinblade_discipline.tooltip": "此招式组生效时，攻击速度提高 20%。"
+    "item.twinblade.wooden-twinblades":  "木制双刃战枪",
+    "item.twinblade.stone-twinblades":  "石制双刃战枪",
+    "item.twinblade.gold-twinblades":  "金制双刃战枪",
+    "item.twinblade.iron-twinblades":  "铁制双刃战枪",
+    "item.twinblade.diamond-twinblades":  "钻石双刃战枪",
+    "item.twinblade.netherite-twinblades":  "下界合金双刃战枪",
+    "weapon_category.twinblade.twinblade":  "双刃战枪",
+    "skill.twinblade.twinblade_discipline":  "双刃战法",
+    "skill.twinblade.twinblade_discipline.tooltip":  "此招式组生效时，攻击速度提高 20%。",
+    "item.twinblade.extended_combo_skillbook":  "技能书",
+    "skill.twinblade.extended_combo":  "扩展连招",
+    "skill.twinblade.extended_combo.tooltip":  "学习此技能后，双刃战枪自动连招将追加额外攻击（auto.006–011）。"
 }

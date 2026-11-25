@@ -2,11 +2,13 @@ package dev.twinblade.neoforge;
 
 import dev.twinblade.TwinbladeContent;
 import dev.twinblade.moveset.TwinbladeAnimations;
+import dev.twinblade.weapon.TwinbladeStyles;
 import dev.twinblade.weapon.TwinbladeWeaponCategories;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import yesman.epicfight.registry.entries.EpicFightCreativeTabs;
+import yesman.epicfight.world.capabilities.item.Style;
 import yesman.epicfight.world.capabilities.item.WeaponCategory;
 
 @Mod(TwinbladeMod.MOD_ID)
@@ -15,6 +17,7 @@ public final class TwinbladeMod {
 
     public TwinbladeMod(IEventBus modBus) {
         WeaponCategory.ENUM_MANAGER.registerEnumCls(MOD_ID, TwinbladeWeaponCategories.class);
+        Style.ENUM_MANAGER.registerEnumCls(MOD_ID, TwinbladeStyles.class);
         modBus.addListener(TwinbladeAnimations::register);
         modBus.addListener(TwinbladeMod::addCreativeTabItems);
 
@@ -26,8 +29,9 @@ public final class TwinbladeMod {
 
     private static void addCreativeTabItems(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == EpicFightCreativeTabs.ITEMS.get()) {
-            event.accept(TwinbladeItems.TWINBLADE);
-            event.accept(TwinbladeItems.WOODEN_TWINBLADE);
+            for (var item : TwinbladeItems.ALL) {
+                event.accept(item);
+            }
         }
     }
 }

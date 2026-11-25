@@ -1,7 +1,14 @@
 {
-  "item.twinblade.twinblade": "Cuchillas gemelas",
-  "item.twinblade.wooden-twinblade": "Cuchillas gemelas de madera",
-  "weapon_category.twinblade.twinblade": "Cuchillas gemelas",
-  "skill.twinblade.twinblade_discipline": "Disciplina de cuchillas gemelas",
-  "skill.twinblade.twinblade_discipline.tooltip": "Aumenta la velocidad de ataque un 20% mientras este moveset está activo."
+    "item.twinblade.wooden-twinblades":  "Cuchillas gemelas de madera",
+    "item.twinblade.stone-twinblades":  "Cuchillas gemelas de piedra",
+    "item.twinblade.gold-twinblades":  "Cuchillas gemelas de oro",
+    "item.twinblade.iron-twinblades":  "Cuchillas gemelas de hierro",
+    "item.twinblade.diamond-twinblades":  "Cuchillas gemelas de diamante",
+    "item.twinblade.netherite-twinblades":  "Cuchillas gemelas de netherita",
+    "weapon_category.twinblade.twinblade":  "Cuchillas gemelas",
+    "skill.twinblade.twinblade_discipline":  "Disciplina de cuchillas gemelas",
+    "skill.twinblade.twinblade_discipline.tooltip":  "Aumenta la velocidad de ataque un 20% mientras este moveset está activo.",
+    "item.twinblade.extended_combo_skillbook":  "Libro de habilidades",
+    "skill.twinblade.extended_combo":  "Combo extendido",
+    "skill.twinblade.extended_combo.tooltip":  "Aprender esta habilidad alarga el combo automático con golpes adicionales (auto.006–011)."
 }

@@ -1,7 +1,14 @@
 {
-  "item.twinblade.twinblade": "Спаренные клинки",
-  "item.twinblade.wooden-twinblade": "Деревянные спаренные клинки",
+  "item.twinblade.wooden-twinblades": "Деревянные спаренные клинки",
+  "item.twinblade.stone-twinblades": "Каменные спаренные клинки",
+  "item.twinblade.gold-twinblades": "Золотые спаренные клинки",
+  "item.twinblade.iron-twinblades": "Железные спаренные клинки",
+  "item.twinblade.diamond-twinblades": "Алмазные спаренные клинки",
+  "item.twinblade.netherite-twinblades": "Незеритовые спаренные клинки",
+  "item.twinblade.extended_combo_skillbook": "Книга навыков",
   "weapon_category.twinblade.twinblade": "Спаренные клинки",
   "skill.twinblade.twinblade_discipline": "Стиль спаренных клинков",
-  "skill.twinblade.twinblade_discipline.tooltip": "Увеличивает скорость атаки на 20%, пока активен этот мувсет."
+  "skill.twinblade.twinblade_discipline.tooltip": "Увеличивает скорость атаки на 20%, пока активен этот мувсет.",
+  "skill.twinblade.extended_combo": "Расширенное комбо",
+  "skill.twinblade.extended_combo.tooltip": "Изучение этого навыка удлиняет автокомбо спаренных клинков дополнительными ударами (auto.006–011)."
 }

@@ -10,7 +10,12 @@ public final class TwinbladeMovesets {
 
     public static final DeferredMoveset TWINBLADE = REGISTRY.registerMoveset(
             TwinbladeContent.TWINBLADE_MOVESET.id(),
-            () -> TwinbladeMovesetDefinitions.create(TwinbladeSkills.TWINBLADE_DISCIPLINE)
+            () -> TwinbladeMovesetDefinitions.createBase(TwinbladeSkills.TWINBLADE_DISCIPLINE)
+    );
+
+    public static final DeferredMoveset TWINBLADE_EXTENDED = REGISTRY.registerMoveset(
+            TwinbladeContent.TWINBLADE_EXTENDED_MOVESET_ID,
+            () -> TwinbladeMovesetDefinitions.createExtended(TwinbladeSkills.TWINBLADE_DISCIPLINE)
     );
 
     private TwinbladeMovesets() {

@@ -1,0 +1,37 @@
+{
+  "transforms": {
+    "mainhand": {
+      "Tool_R": {
+        "translation": [0.0, 0.0, -0.55],
+        "rotation": [-90.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 1.0]
+      },
+      "Tool_L": {
+        "translation": [0.0, 0.0, -0.55],
+        "rotation": [-90.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 1.0]
+      }
+    },
+    "offhand": {
+      "Tool_R": {
+        "translation": [0.0, 0.0, -0.55],
+        "rotation": [-90.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 1.0]
+      },
+      "Tool_L": {
+        "translation": [0.0, 0.0, -0.55],
+        "rotation": [-90.0, 0.0, 0.0],
+        "scale": [1.0, 1.0, 1.0]
+      }
+    }
+  },
+  "trail": {
+    "color": [140, 140, 140],
+    "begin_pos": [0.0, 0.15, 1.0],
+    "end_pos": [0.0, 0.15, -1.0],
+    "lifetime": 6,
+    "interpolations": 4,
+    "texture_path": "epicfight:textures/particle/swing_trail.png",
+    "particle_type": "epicfight:swing_trail"
+  }
+}

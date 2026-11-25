@@ -10,11 +10,40 @@ NeoForge 1.21.1 addon for Epic Fight `21.17.3.1`.
 
 ## Current features
 
-- `twinblade` — a diamond-tier, two-handed double-bladed spear.
-- `wooden-twinblade` — a wood-tier test item that uses the same Twinblade moveset and 3D Blockbench model.
+- Tiered twinblades (`wooden` / `stone` / `gold` / `iron` / `diamond` / `netherite`-`twinblades`) sharing one Twinblade EF moveset, with spear-style `separate_transforms` models (hand + GUI sprites both under `textures/item`, GUI as `*-twinblades-gui.png`, same layout as Epic Fight spears).
 - A Twinblade Epic Fight weapon preset and moveset.
+
+Give commands (creative / commands):
+
+```
+/give @s twinblade:wooden-twinblades
+/give @s twinblade:stone-twinblades
+/give @s twinblade:gold-twinblades
+/give @s twinblade:iron-twinblades
+/give @s twinblade:diamond-twinblades
+/give @s twinblade:netherite-twinblades
+```
+
 - `Twinblade Discipline` — a passive Epic Fight skill that grants +20% attack speed while equipped by the moveset.
+- `Extended Combo` (`twinblade:extended_combo`) — learnable PASSIVE; Skill Book item title is “Skill Book” / «Книга навыков», skill subtitle “Extended Combo” / «Расширенное комбо». Learning unlocks auto.006–011 (finisher 011 is multi-hit and waits for clip end before the next combo).
 - English, Russian, Spanish, German, French, and Simplified Chinese translations.
+
+### Extended combo skill book
+
+```
+/give @s twinblade:extended_combo_skillbook
+```
+
+Craft: book + any `#twinblade:twinblades`. Right-click the book → learn like any EF skill book.
+
+**Textures to replace (placeholders now):**
+
+| Asset | Path |
+|-------|------|
+| Skill icon (EF convention) | `assets/twinblade/textures/gui/skills/passive/extended_combo.png` |
+| Skill book item icon | `assets/twinblade/textures/item/extended_combo_skillbook.png` |
+
+Book *screen* UI uses Epic Fight’s own `epicfight:textures/gui/screen/skillbook.png` (not ours).
 
 Locomotion (idle, walk, run) and the five-hit auto combo (`twinblade.auto.001`–`005`) use custom Twinblade clips. Dash, air slash, mount, and remaining living motions still fall back to Epic Fight spear animations until those assets are wired.
 

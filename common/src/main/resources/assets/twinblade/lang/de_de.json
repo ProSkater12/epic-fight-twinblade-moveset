@@ -1,7 +1,14 @@
 {
-  "item.twinblade.twinblade": "Zwillingsklingen",
-  "item.twinblade.wooden-twinblade": "Hölzerne Zwillingsklingen",
-  "weapon_category.twinblade.twinblade": "Zwillingsklingen",
-  "skill.twinblade.twinblade_discipline": "Zwillingsklingen-Disziplin",
-  "skill.twinblade.twinblade_discipline.tooltip": "Erhöht die Angriffsgeschwindigkeit um 20 %, solange dieses Moveset aktiv ist."
+    "item.twinblade.wooden-twinblades":  "Hölzerne Zwillingsklingen",
+    "item.twinblade.stone-twinblades":  "Steinerne Zwillingsklingen",
+    "item.twinblade.gold-twinblades":  "Goldene Zwillingsklingen",
+    "item.twinblade.iron-twinblades":  "Eiserne Zwillingsklingen",
+    "item.twinblade.diamond-twinblades":  "Diamantene Zwillingsklingen",
+    "item.twinblade.netherite-twinblades":  "Netherit-Zwillingsklingen",
+    "weapon_category.twinblade.twinblade":  "Zwillingsklingen",
+    "skill.twinblade.twinblade_discipline":  "Zwillingsklingen-Disziplin",
+    "skill.twinblade.twinblade_discipline.tooltip":  "Erhöht die Angriffsgeschwindigkeit um 20 %, solange dieses Moveset aktiv ist.",
+    "item.twinblade.extended_combo_skillbook":  "Fertigkeitsbuch",
+    "skill.twinblade.extended_combo":  "Erweiterte Kombo",
+    "skill.twinblade.extended_combo.tooltip":  "Das Erlernen dieser Fähigkeit verlängert die Auto-Kombo um zusätzliche Treffer (auto.006–011)."
 }
