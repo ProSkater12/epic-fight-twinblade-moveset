@@ -54,7 +54,7 @@ public final class TwinbladeContent {
     }
 
     private static Weapon weapon(String id, int damage, float armorNegation, float impact) {
-        return new Weapon(id, damage, ATTACK_SPEED, armorNegation, impact, 2, TWINBLADE_REACH);
+        return new Weapon(id, damage, ATTACK_SPEED, armorNegation, impact, 5, TWINBLADE_REACH);
     }
 
     public record Weapon(

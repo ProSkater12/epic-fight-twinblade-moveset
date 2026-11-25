@@ -2,24 +2,24 @@
   "transforms": {
     "mainhand": {
       "Tool_R": {
-        "translation": [0.0, 0.0, -0.55],
+        "translation": [0.0, 0.0, 0.0],
         "rotation": [-90.0, 0.0, 0.0],
         "scale": [1.0, 1.0, 1.0]
       },
       "Tool_L": {
-        "translation": [0.0, 0.0, -0.55],
+        "translation": [0.0, 0.0, 0.0],
         "rotation": [-90.0, 0.0, 0.0],
         "scale": [1.0, 1.0, 1.0]
       }
     },
     "offhand": {
       "Tool_R": {
-        "translation": [0.0, 0.0, -0.55],
+        "translation": [0.0, 0.0, 0.0],
         "rotation": [-90.0, 0.0, 0.0],
         "scale": [1.0, 1.0, 1.0]
       },
       "Tool_L": {
-        "translation": [0.0, 0.0, -0.55],
+        "translation": [0.0, 0.0, 0.0],
         "rotation": [-90.0, 0.0, 0.0],
         "scale": [1.0, 1.0, 1.0]
       }
