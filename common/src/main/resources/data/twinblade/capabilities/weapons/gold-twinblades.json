@@ -1,10 +1,10 @@
 {
   "type": "twinblade:twinblade",
   "attributes": {
-    "two_hand": {
+    "common": {
       "armor_negation": 2,
       "impact": 1,
-      "max_strikes": 2
+      "max_strikes": 5
     }
   }
 }
